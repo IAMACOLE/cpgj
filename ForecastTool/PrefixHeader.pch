@@ -1,0 +1,130 @@
+//
+//  PrefixHeader.pch
+//  ForecastTool
+//
+//  Created by hello on 2018/6/6.
+//  Copyright © 2018年 XX. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define IS_TEST 0   // 是否测试
+#if IS_TEST
+#define MCIP @"http://47.89.36.37:8088/"
+#define STIP @"http://47.89.36.37:8082/"
+#else
+#define MCIP @"http://www.xlfdapi.com/"
+#define STIP @"http://47.89.36.37:8082/"
+#endif
+//最大的投注倍率
+#define BigBettingRate 9999
+
+#define KK_STATUS  [[NSUserDefaults standardUserDefaults]boolForKey:@"tabBarViewControllerSettingKey"]
+#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+#define BIWeakObj(o)   @autoreleasepool {} __weak typeof(o) o ## Weak = o;
+#define WeakObject(obj) __weak typeof(obj) weakObject = obj;
+#define StrongObject(obj) __strong typeof(obj) strongObject = weakObject;
+// =============================用户信息存储 ============================= /
+#define BSUserinfo                  @"userinfo"                       // 用户信息
+#define BSUserinfo_userId           @"userinfo_userId"                // 用户登录名
+#define BSUserinfo_nick_name        @"userinfo_nick_name"             // 用户昵称
+#define BSUserinfo_token            @"userinfo_token"                 // 登录token,相当于用户Id
+#define BSUserinfo_md5_salt         @"userinfo_md5_salt"              // 用户私钥
+#define BSUserinfo_image_url        @"userinfo_image_url"             // 用户头像
+#define BSUserinfo_bank_status      @"userinfo_bank_status"           // 绑定银行卡状态
+#define BSUserinfo_password_status  @"userinfo_password_status"       // 密码设置状态
+#define BSbank_passwd_status        @"bank_passwd_status"             //银行卡取现密码状态
+
+#define BSActivityViewControllerState   @"activityVCState"
+#define BSLuckyMoneyState               @"luckyMoneyState"
+#define BSHomeContentState              @"HomeContentState"
+#define OpenOauth 0
+/* 通知 */
+//登录状态改变
+#define BSNotification_ChangeLoginStatus          @"ChangeLoginStatus"
+#define BSNotification_reloadPersonalInformation  @"reloadPersonalInformation"
+
+#define kAPP_Version [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+#define kAPP_BundleId [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]
+
+#define KIAP_Array [NSMutableArray arrayWithArray:[NSArray arrayWithObjects:@"38",@"88",@"588",nil]]
+
+// 返回状态码
+#define code_success         @(10000)
+#define code_validationFails @(20011)
+#define code_tokenFailure    @(20012)
+#define IS_SUCCESS [data[@"status"] integerValue] == 1
+
+// 配置Url
+#define BSConfig_register_protocol     @"register_protocol"     // 注册协议
+#define BSConfig_security_problem      @"security_problem"      // 安全问题 (暂时没用到)
+#define BSConfig_recharge_url          @"recharge_url"          // 充值地址
+#define BSConfig_customer_service_url  @"customer_service_url"  // 客服中心
+#define BSConfig_bzjlq_url             @"sy_bzjlq_url"          // 补助金领取
+#define BSConfig_fx_helper_url         @"fx_helper_url"         // 分享帮助 (暂时没用到)
+#define BSConfig_gd_helper_url         @"gd_helper_url"         // 跟单说明
+#define BSConfig_hd_fxlj_url           @"hd_fxlj_url"           // 分享礼金 (暂时没用到)
+
+//屏幕的长和宽
+#define MCScreenWidth [UIScreen mainScreen].bounds.size.width
+#define MCScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+
+#define SCREEN_MAX_LENGTH (MAX(MCScreenWidth, MCScreenHeight))
+#define SCREEN_MIN_LENGTH (MIN(MCScreenWidth, MCScreenHeight))
+#define IS_IPHONE_X (IS_IPHONE && SCREEN_MAX_LENGTH == 812)
+#define IS_IPHONE_Pulus (IS_IPHONE && SCREEN_MAX_LENGTH == 736)
+
+//根据6注释，等比例缩放
+#define kAdapterWith(x) MCScreenWidth/375*x
+#define kAdapterheight(y) MCScreenHeight/667*y
+#define kAdapterFontSize(x) MCScreenWidth/375*x
+
+#define MCStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height //状态栏高度
+#define MCNavBarHeight 44.0
+#define MCTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49) //底部tabbar高度
+#define MCTopHeight (MCStatusBarHeight + MCNavBarHeight) //整个导航栏高度
+// 字体
+#define MCFont(size) [UIFont systemFontOfSize:size]
+
+// 第三方宏定义
+#define MCKey_Jpush @"f119ddb06a1749280a32a34b"   // 极光
+
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "Masonry.h"
+#import "UIImageView+WebCache.h"
+#import "PNChart.h"
+#import "MJRefresh.h"
+#import "XXNetWorkTool.h"
+#import "DefineColor.h"
+#import "NSString+InsertYMD.h"
+#import "UIColor+Hex.h"
+
+#import "MCTool.h"
+#import "MCView.h"
+
+#import "MCH5ViewController.h"
+// 空白数据页面
+#import "MCEmptyDataView.h"
+
+// 登录
+#import "KKLoginViewController.h"
+//==============第三方库=============//
+// 加密
+#import "NSString+MD5.h"
+// 余额获取
+#import "KKBalanceManager.h"
+// 颜色定义
+#import "KKDefineColor.h"
+
+#import "KKAppSettingManager.h"
+
+#import "AppDelegate.h"
+
+#endif /* PrefixHeader_pch */

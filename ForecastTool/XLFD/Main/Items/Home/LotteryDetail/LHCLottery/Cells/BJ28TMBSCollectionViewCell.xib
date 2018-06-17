@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BJ28TMBSCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="115" height="58"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="115" height="58"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BJ28_selectCellBg" translatesAutoresizingMaskIntoConstraints="NO" id="Uun-Su-TPf">
+                        <rect key="frame" x="8" y="8" width="99" height="42"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5W-lL-eAc">
+                        <rect key="frame" x="8" y="8" width="99" height="42"/>
+                        <inset key="titleEdgeInsets" minX="-16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-92" maxY="0.0"/>
+                        <state key="normal" title="01" image="arrow_brand_normal_btn">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="countButtonClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="BSV-L5-HPL"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Uun-Su-TPf" secondAttribute="bottom" constant="8" id="1n4-Qs-4rE"/>
+                <constraint firstAttribute="bottom" secondItem="P5W-lL-eAc" secondAttribute="bottom" constant="8" id="TIU-71-kJk"/>
+                <constraint firstItem="P5W-lL-eAc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="ZeS-wm-r3I"/>
+                <constraint firstItem="Uun-Su-TPf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="aI4-5H-lIn"/>
+                <constraint firstItem="P5W-lL-eAc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="bjN-8v-Qhy"/>
+                <constraint firstItem="Uun-Su-TPf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="jrK-mI-Wmp"/>
+                <constraint firstAttribute="trailing" secondItem="Uun-Su-TPf" secondAttribute="trailing" constant="8" id="oKC-bG-ti2"/>
+                <constraint firstAttribute="trailing" secondItem="P5W-lL-eAc" secondAttribute="trailing" constant="8" id="uKz-hI-g5r"/>
+            </constraints>
+            <size key="customSize" width="115" height="58"/>
+            <connections>
+                <outlet property="countButton" destination="P5W-lL-eAc" id="E4V-BH-gKG"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="77"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="BJ28_selectCellBg" width="100" height="40"/>
+        <image name="arrow_brand_normal_btn" width="12" height="12"/>
+    </resources>
+</document>

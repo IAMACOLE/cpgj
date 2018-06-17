@@ -1,0 +1,517 @@
+[
+    {
+        "name": "五星直选",
+        "wf": [
+            {
+                "name": "五星直选复式",
+                "wf_flag": "ssc_5xzhix_fs"
+            },
+            {
+                "name": "五星直选组合",
+                "wf_flag": "ssc_5xzhix_zh"
+            }
+        ]
+    },
+    {
+        "name": "五星组选",
+        "wf": [
+            {
+                "name": "五星组选120",
+                "wf_flag": "ssc_5xzux_120"
+            },
+            {
+                "name": "五星组选60",
+                "wf_flag": "ssc_5xzux_60"
+            },
+            {
+                "name": "五星组选30",
+                "wf_flag": "ssc_5xzux_30"
+            },
+            {
+                "name": "五星组选20",
+                "wf_flag": "ssc_5xzux_20"
+            },
+            {
+                "name": "五星组选10",
+                "wf_flag": "ssc_5xzux_10"
+            },
+            {
+                "name": "五星组选5",
+                "wf_flag": "ssc_5xzux_5"
+            }
+        ]
+    },
+    {
+        "name": "五星特殊",
+        "wf": [
+            {
+                "name": "一帆风顺",
+                "wf_flag": "ssc_5xts_yffs"
+            },
+            {
+                "name": "好事成双",
+                "wf_flag": "ssc_5xts_hscs"
+            },
+            {
+                "name": "三星报喜",
+                "wf_flag": "ssc_5xts_sxbx"
+            },
+            {
+                "name": "四季发财",
+                "wf_flag": "ssc_5xts_sjfc"
+            }
+        ]
+    },
+    {
+        "name": "四星直选",
+        "wf": [
+            {
+                "name": "前四直选复式",
+                "wf_flag": "ssc_4xzhix_qszhixfs"
+            },
+            {
+                "name": "前四直选组合",
+                "wf_flag": "ssc_4xzhix_qszhixzh"
+            },
+            {
+                "name": "后四直选复式",
+                "wf_flag": "ssc_4xzhix_hszhixfs"
+            },
+            {
+                "name": "后四直选组合",
+                "wf_flag": "ssc_4xzhix_hszhixzh"
+            }
+        ]
+    },
+    {
+        "name": "四星组选",
+        "wf": [
+            {
+                "name": "前四组选24",
+                "wf_flag": "ssc_4xzux_qszux24"
+            },
+            {
+                "name": "前四组选12",
+                "wf_flag": "ssc_4xzux_qszux12"
+            },
+            {
+                "name": "前四组选6",
+                "wf_flag": "ssc_4xzux_qszux6"
+            },
+            {
+                "name": "前四组选4",
+                "wf_flag": "ssc_4xzux_qszux4"
+            },
+            {
+                "name": "后四组选24",
+                "wf_flag": "ssc_4xzux_hszux24"
+            },
+            {
+                "name": "后四组选12",
+                "wf_flag": "ssc_4xzux_hszux12"
+            },
+            {
+                "name": "后四组选6",
+                "wf_flag": "ssc_4xzux_hszux6"
+            },
+            {
+                "name": "后四组选4",
+                "wf_flag": "ssc_4xzux_hszux4"
+            }
+        ]
+    },
+    {
+        "name": "前三直选",
+        "wf": [
+            {
+                "name": "前三直选复式",
+                "wf_flag": "ssc_q3zhix_fs"
+            },
+            {
+                "name": "前三直选组合",
+                "wf_flag": "ssc_q3zhix_zh"
+            },
+            {
+                "name": "前三直选和值",
+                "wf_flag": "ssc_q3zhix_hz"
+            },
+            {
+                "name": "前三直选跨度",
+                "wf_flag": "ssc_q3zhix_kd"
+            }
+        ]
+    },
+    {
+        "name": "前三组选",
+        "wf": [
+            {
+                "name": "前三组三复式",
+                "wf_flag": "ssc_q3zux_q3zu3fs"
+            },
+            {
+                "name": "前三组六复式",
+                "wf_flag": "ssc_q3zux_q3zu6fs"
+            },
+            {
+                "name": "前三组选混合",
+                "wf_flag": "ssc_q3zux_q3zuxhh"
+            },
+            {
+                "name": "前三组选和值",
+                "wf_flag": "ssc_q3zux_q3zuxhz"
+            },
+            {
+                "name": "前三组选包胆",
+                "wf_flag": "ssc_q3zux_q3zuxbd"
+            }
+        ]
+    },
+    {
+        "name": "中三直选",
+        "wf": [
+            {
+                "name": "中三直选复式",
+                "wf_flag": "ssc_z3zhix_fs"
+            },
+            {
+                "name": "中三直选组合",
+                "wf_flag": "ssc_z3zhix_zh"
+            },
+            {
+                "name": "中三直选和值",
+                "wf_flag": "ssc_z3zhix_hz"
+            },
+            {
+                "name": "中三直选跨度",
+                "wf_flag": "ssc_z3zhix_kd"
+            }
+        ]
+    },
+    {
+        "name": "中三组选",
+        "wf": [
+            {
+                "name": "中三组三复式",
+                "wf_flag": "ssc_z3zux_q3zu3fs"
+            },
+            {
+                "name": "中三组六复式",
+                "wf_flag": "ssc_z3zux_q3zu6fs"
+            },
+            {
+                "name": "中三组选混合",
+                "wf_flag": "ssc_z3zux_q3zuxhh"
+            },
+            {
+                "name": "中三组选和值",
+                "wf_flag": "ssc_z3zux_q3zuxhz"
+            },
+            {
+                "name": "中三组选包胆",
+                "wf_flag": "ssc_z3zux_z3zuxbd"
+            }
+        ]
+    },
+    {
+        "name": "后三直选",
+        "wf": [
+            {
+                "name": "后三直选复式",
+                "wf_flag": "ssc_h3zhix_fs"
+            },
+            {
+                "name": "后三直选组合",
+                "wf_flag": "ssc_h3zhix_zh"
+            },
+            {
+                "name": "后三直选和值",
+                "wf_flag": "ssc_h3zhix_hz"
+            },
+            {
+                "name": "后三直选跨度",
+                "wf_flag": "ssc_h3zhix_kd"
+            }
+        ]
+    },
+    {
+        "name": "后三组选",
+        "wf": [
+            {
+                "name": "后三组三复式",
+                "wf_flag": "ssc_h3zux_z3zu3fs"
+            },
+            {
+                "name": "后三组六复式",
+                "wf_flag": "ssc_h3zux_z3zu6fs"
+            },
+            {
+                "name": "后三组选混合",
+                "wf_flag": "ssc_h3zux_z3zuxhh"
+            },
+            {
+                "name": "后三组选和值",
+                "wf_flag": "ssc_h3zux_z3zuxhz"
+            },
+            {
+                "name": "后三组选包胆",
+                "wf_flag": "ssc_h3zux_z3zuxbd"
+            }
+        ]
+    },
+    {
+        "name": "前二直选",
+        "wf": [
+            {
+                "name": "前二直选复式",
+                "wf_flag": "ssc_q2zhix_fs"
+            },
+            {
+                "name": "前二直选和值",
+                "wf_flag": "ssc_q2zhix_hz"
+            },
+            {
+                "name": "前二直选跨度",
+                "wf_flag": "ssc_q2zhix_kd"
+            }
+        ]
+    },
+    {
+        "name": "前二组选",
+        "wf": [
+            {
+                "name": "前二组选复式",
+                "wf_flag": "ssc_q2zux_fs"
+            },
+            {
+                "name": "前二组选和值",
+                "wf_flag": "ssc_q2zux_hz"
+            },
+            {
+                "name": "前二组选包胆",
+                "wf_flag": "ssc_q2zux_bd"
+            }
+        ]
+    },
+    {
+        "name": "后二直选",
+        "wf": [
+            {
+                "name": "后二直选复式",
+                "wf_flag": "ssc_h2zhix_fs"
+            },
+            {
+                "name": "后二直选和值",
+                "wf_flag": "ssc_h2zhix_hz"
+            },
+            {
+                "name": "后二直选跨度",
+                "wf_flag": "ssc_h2zhix_kd"
+            }
+        ]
+    },
+    {
+        "name": "后二组选",
+        "wf": [
+            {
+                "name": "后二组选复式",
+                "wf_flag": "ssc_h2zux_fs"
+            },
+            {
+                "name": "后二组选和值",
+                "wf_flag": "ssc_h2zux_hz"
+            },
+            {
+                "name": "后二组选包胆",
+                "wf_flag": "ssc_h2zux_bd"
+            }
+        ]
+    },
+    {
+        "name": "定位胆",
+        "wf": [
+            {
+                "name": "五星定位胆",
+                "wf_flag": "ssc_5xdwd"
+            }
+        ]
+    },
+    {
+        "name": "三星不定位",
+        "wf": [
+            {
+                "name": "前三一码不定",
+                "wf_flag": "ssc_3xbdw_q31"
+            },
+            {
+                "name": "中三一码不定",
+                "wf_flag": "ssc_3xbdw_z31"
+            },
+            {
+                "name": "后三一码不定",
+                "wf_flag": "ssc_3xbdw_h31"
+            },
+            {
+                "name": "前三二码不定",
+                "wf_flag": "ssc_3xbdw_q32"
+            },
+            {
+                "name": "中三二码不定",
+                "wf_flag": "ssc_3xbdw_z32"
+            },
+            {
+                "name": "后三二码不定",
+                "wf_flag": "ssc_3xbdw_h32"
+            }
+        ]
+    },
+    {
+        "name": "四星不定位",
+        "wf": [
+            {
+                "name": "后四一码不定",
+                "wf_flag": "ssc_4xbdw_h41"
+            },
+            {
+                "name": "后四二码不定",
+                "wf_flag": "ssc_4xbdw_h42"
+            }
+        ]
+    },
+    {
+        "name": "五星不定位",
+        "wf": [
+            {
+                "name": "五星二码不定",
+                "wf_flag": "ssc_4xbdw_h52"
+            },
+            {
+                "name": "五星三码不定",
+                "wf_flag": "ssc_4xbdw_h53"
+            }
+        ]
+    },
+    {
+        "name": "大小单双",
+        "wf": [
+            {
+                "name": "前二大小单双",
+                "wf_flag": "ssc_dxds_q2"
+            },
+            {
+                "name": "后二大小单双",
+                "wf_flag": "ssc_dxds_h2"
+            },
+            {
+                "name": "前三大小单双",
+                "wf_flag": "ssc_dxds_q3"
+            },
+            {
+                "name": "后三大小单双",
+                "wf_flag": "ssc_dxds_h3"
+            }
+        ]
+    },
+    {
+        "name": "任二直选",
+        "wf": [
+            {
+                "name": "任二直选复式",
+                "wf_flag": "ssc_r2zhix_fs"
+            },
+            {
+                "name": "任二直选和值",
+                "wf_flag": "ssc_r2zhix_hz"
+            }
+        ]
+    },
+    {
+        "name": "任二组选",
+        "wf": [
+            {
+                "name": "任二组选复式",
+                "wf_flag": "ssc_r2zux_fs"
+            },
+            {
+                "name": "任二组选和值",
+                "wf_flag": "ssc_r2zux_hz"
+            }
+        ]
+    },
+    {
+        "name": "任三直选",
+        "wf": [
+            {
+                "name": "任三直选复式",
+                "wf_flag": "ssc_r3zhix_fs"
+            },
+            {
+                "name": "任三直选和值",
+                "wf_flag": "ssc_r3zhix_hz"
+            }
+        ]
+    },
+    {
+        "name": "任三组选",
+        "wf": [
+            {
+                "name": "任3组三复式",
+                "wf_flag": "ssc_r3zux_z3fs"
+            },
+            {
+                "name": "任3组六复式",
+                "wf_flag": "ssc_r3zux_z6hz"
+            },
+            {
+                "name": "任3混合",
+                "wf_flag": "ssc_r3zux_hh3"
+            },
+            {
+                "name": "任3组选和值",
+                "wf_flag": "ssc_r3zux_hz"
+            }
+        ]
+    },
+    {
+        "name": "任四直选",
+        "wf": [
+            {
+                "name": "任四直选复式",
+                "wf_flag": "ssc_r4zhix_fs"
+            }
+        ]
+    },
+    {
+        "name": "任四组选",
+        "wf": [
+            {
+                "name": "任4组选24",
+                "wf_flag": "ssc_r4zux_24"
+            },
+            {
+                "name": "任4组选12",
+                "wf_flag": "ssc_r4zux_12"
+            },
+            {
+                "name": "任4组选6",
+                "wf_flag": "ssc_r4zux_6"
+            },
+            {
+                "name": "任4组选4",
+                "wf_flag": "ssc_r4zux_4"
+            }
+        ]
+    },
+    {
+        "name": "龙虎斗",
+        "wf": [
+            {
+                "name": "龙虎斗",
+                "wf_flag": "ssc_lhd"
+            }
+        ]
+    }
+] 
+
+
+ 
+     
