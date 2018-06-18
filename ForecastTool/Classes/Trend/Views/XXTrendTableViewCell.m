@@ -26,11 +26,13 @@
     if (self) {
         
         UILabel *periodLabel = [UILabel new];
+        periodLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:periodLabel];
         _periodLabel = periodLabel;
         [periodLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(10);
+            make.left.mas_equalTo(0);
             make.centerY.mas_equalTo(0);
+            make.width.mas_equalTo(120);
         }];
         periodLabel.font = [UIFont systemFontOfSize:13];
         periodLabel.textColor = [UIColor grayColor];
@@ -58,20 +60,18 @@
 {
     return self.dataModel.dataArr.count;
 }
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     XXLLuckyCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"luckyCell" forIndexPath:indexPath];
     cell.ranking = self.dataModel.rankingArr[indexPath.item];
     return cell;
 }
 -(UICollectionView *)collectionView{
-    
     if(_collectionView == nil){
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
-        layout.itemSize = CGSizeMake(60, 30);
+        layout.itemSize = CGSizeMake(65, 30);
         layout.minimumLineSpacing =0;
         layout.minimumInteritemSpacing = 0;
-        UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 10, MCScreenWidth, 30) collectionViewLayout:layout];
+        UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 10, 60*11, 30) collectionViewLayout:layout];
         collectionView.backgroundColor = [UIColor whiteColor];
         _collectionView = collectionView;
         collectionView.scrollEnabled = NO;

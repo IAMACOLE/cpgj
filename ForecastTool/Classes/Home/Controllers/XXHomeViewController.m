@@ -9,7 +9,13 @@
 #import "XXHomeViewController.h"
 #import "XXHomeCollectionViewCell.h"
 #import "XXLuckyViewController.h"
+#import "XXSamePeriodViewController.h"
+#import "XXStatisticViewController.h"
 #import "XXTrendViewController.h"
+#import "XXSimilarViewController.h"
+#import "XXNumberCombinationViewController.h"
+#import "XXNumberCompatibilityViewController.h"
+#import "XXAboutUSViewController.h"
 
 @interface XXHomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -35,8 +41,25 @@
     }else if (indexPath.item == 1){
         XXTrendViewController *trendVC = [XXTrendViewController new];
         [self.navigationController pushViewController:trendVC animated:YES];
+    }else if (indexPath.item == 2){
+        XXSamePeriodViewController *spvc = [[XXSamePeriodViewController alloc]init];
+        [self.navigationController pushViewController:spvc animated:YES];
+    }else if (indexPath.item == 3){
+        XXStatisticViewController *svc = [[XXStatisticViewController alloc]init];
+        [self.navigationController pushViewController:svc animated:YES];
+    }else if (indexPath.item == 4){
+        XXSimilarViewController *svc = [[XXSimilarViewController alloc]init];
+        [self.navigationController pushViewController:svc animated:YES];
+    }else if(indexPath.item == 5){
+        XXNumberCombinationViewController *ncvc = [[XXNumberCombinationViewController alloc]init];
+        [self.navigationController pushViewController:ncvc animated:YES];
+    }else if(indexPath.item == 6){
+        XXNumberCompatibilityViewController *ncvc = [[XXNumberCompatibilityViewController alloc]init];
+        [self.navigationController pushViewController:ncvc animated:YES];
+    }else if(indexPath.item == 7){
+        XXAboutUSViewController *avc = [[XXAboutUSViewController alloc]init];
+        [self.navigationController pushViewController:avc animated:YES];
     }
-    
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{

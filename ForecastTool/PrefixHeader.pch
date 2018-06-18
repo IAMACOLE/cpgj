@@ -9,6 +9,10 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+//获取历史同期 /shell/model/getHistoryTq
+//获取统计 /shell/model/getTongji
+//获取组合 /shell/model/getZuhe
+
 #define IS_TEST 0   // 是否测试
 #if IS_TEST
 #define MCIP @"http://47.89.36.37:8088/"
@@ -70,6 +74,12 @@
 //屏幕的长和宽
 #define MCScreenWidth [UIScreen mainScreen].bounds.size.width
 #define MCScreenHeight [UIScreen mainScreen].bounds.size.height
+//导航高
+#define IS_iPhoneX (MCScreenWidth == 375 && MCScreenHeight == 812)
+#define navHeight 44
+#define navCountHeight (IS_iPhoneX ? (64+24) : 64)
+#define tabBarHeight (49+(IS_iPhoneX ? 34 : 0))
+#define customTabBarH 49
 
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)

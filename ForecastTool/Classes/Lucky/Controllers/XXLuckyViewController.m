@@ -33,6 +33,10 @@
 }
 
 -(void)getData{
+    if (_pageNum == 1) {
+       [MCView BSMBProgressHUD_bufferAndTextWithView:self.view andText:nil];
+    }
+    
     NSString * urlStr = [NSString stringWithFormat:@"%@%@",MCIP,@"cp/kj-trend-history"];
     NSDictionary * parameter = @{
                                  @"lottery_id" : @"pk10",
@@ -42,6 +46,7 @@
                                  };
     [[XXNetWorkTool shareTool] postDataWithUrl:urlStr parameters:parameter success:^(id responseObject) {
         [self.tableView.mj_header endRefreshing];
+        [MCView BSMBProgressHUD_hideWith:self.view];
         
         NSArray *dataSource =  [XXLuckyDataModel mj_objectArrayWithKeyValuesArray:responseObject];
         if(self->_pageNum == 1){
@@ -58,6 +63,7 @@
         [self.tableView reloadData];
     } fail:^(NSError *error) {
         NSLog(@"%@",error.description);
+        [MCView BSMBProgressHUD_hideWith:self.view];
         [self.tableView.mj_footer endRefreshing];
         [self.tableView.mj_header endRefreshing];
     }];

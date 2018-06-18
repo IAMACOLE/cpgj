@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		890E2862C5D3D336CA71F224 /* libPods-ForecastTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF7FB0137655984EEBB8D64 /* libPods-ForecastTool.a */; };
+		CE47D7FA20D6120E0083BABA /* XXAboutUSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47D7F920D6120E0083BABA /* XXAboutUSViewController.m */; };
+		CE47D7FD20D615110083BABA /* XXNumberCombinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47D7FC20D615110083BABA /* XXNumberCombinationViewController.m */; };
+		CE47D80020D616020083BABA /* XXNumberCompatibilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47D7FF20D616020083BABA /* XXNumberCompatibilityViewController.m */; };
+		CE47D80320D617670083BABA /* XXSamePeriodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47D80220D617670083BABA /* XXSamePeriodViewController.m */; };
+		CE47D80620D618920083BABA /* XXSimilarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47D80520D618920083BABA /* XXSimilarViewController.m */; };
+		CE47D80920D619360083BABA /* XXStatisticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47D80820D619360083BABA /* XXStatisticViewController.m */; };
+		CE47D80C20D640B80083BABA /* XXSamePeriodHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47D80B20D640B80083BABA /* XXSamePeriodHeadView.m */; };
+		CE47D80F20D64DA70083BABA /* XXSamePeriodCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47D80E20D64DA70083BABA /* XXSamePeriodCollectionViewCell.m */; };
+		CE47D81520D660360083BABA /* XXSamePeriodTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47D81420D660360083BABA /* XXSamePeriodTableViewCell.m */; };
+		CE47D81820D67C870083BABA /* XXSelectionPeriodView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47D81720D67C870083BABA /* XXSelectionPeriodView.m */; };
 		CE4DEE8220C799AD00596F9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4DEE8120C799AD00596F9D /* AppDelegate.m */; };
 		CE4DEE8820C799AD00596F9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4DEE8620C799AD00596F9D /* Main.storyboard */; };
 		CE4DEE8A20C799B200596F9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4DEE8920C799B200596F9D /* Assets.xcassets */; };
@@ -311,6 +321,26 @@
 /* Begin PBXFileReference section */
 		1FF7FB0137655984EEBB8D64 /* libPods-ForecastTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ForecastTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C1B182E193A718E0005A429 /* Pods-ForecastTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastTool/Pods-ForecastTool.release.xcconfig"; sourceTree = "<group>"; };
+		CE47D7F820D6120E0083BABA /* XXAboutUSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXAboutUSViewController.h; sourceTree = "<group>"; };
+		CE47D7F920D6120E0083BABA /* XXAboutUSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXAboutUSViewController.m; sourceTree = "<group>"; };
+		CE47D7FB20D615110083BABA /* XXNumberCombinationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXNumberCombinationViewController.h; sourceTree = "<group>"; };
+		CE47D7FC20D615110083BABA /* XXNumberCombinationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXNumberCombinationViewController.m; sourceTree = "<group>"; };
+		CE47D7FE20D616020083BABA /* XXNumberCompatibilityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXNumberCompatibilityViewController.h; sourceTree = "<group>"; };
+		CE47D7FF20D616020083BABA /* XXNumberCompatibilityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXNumberCompatibilityViewController.m; sourceTree = "<group>"; };
+		CE47D80120D617670083BABA /* XXSamePeriodViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXSamePeriodViewController.h; sourceTree = "<group>"; };
+		CE47D80220D617670083BABA /* XXSamePeriodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXSamePeriodViewController.m; sourceTree = "<group>"; };
+		CE47D80420D618920083BABA /* XXSimilarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXSimilarViewController.h; sourceTree = "<group>"; };
+		CE47D80520D618920083BABA /* XXSimilarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXSimilarViewController.m; sourceTree = "<group>"; };
+		CE47D80720D619360083BABA /* XXStatisticViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXStatisticViewController.h; sourceTree = "<group>"; };
+		CE47D80820D619360083BABA /* XXStatisticViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXStatisticViewController.m; sourceTree = "<group>"; };
+		CE47D80A20D640B80083BABA /* XXSamePeriodHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXSamePeriodHeadView.h; sourceTree = "<group>"; };
+		CE47D80B20D640B80083BABA /* XXSamePeriodHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXSamePeriodHeadView.m; sourceTree = "<group>"; };
+		CE47D80D20D64DA70083BABA /* XXSamePeriodCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXSamePeriodCollectionViewCell.h; sourceTree = "<group>"; };
+		CE47D80E20D64DA70083BABA /* XXSamePeriodCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXSamePeriodCollectionViewCell.m; sourceTree = "<group>"; };
+		CE47D81320D660360083BABA /* XXSamePeriodTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXSamePeriodTableViewCell.h; sourceTree = "<group>"; };
+		CE47D81420D660360083BABA /* XXSamePeriodTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXSamePeriodTableViewCell.m; sourceTree = "<group>"; };
+		CE47D81620D67C870083BABA /* XXSelectionPeriodView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXSelectionPeriodView.h; sourceTree = "<group>"; };
+		CE47D81720D67C870083BABA /* XXSelectionPeriodView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXSelectionPeriodView.m; sourceTree = "<group>"; };
 		CE4DEE7D20C799AD00596F9D /* ForecastTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForecastTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4DEE8020C799AD00596F9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE4DEE8120C799AD00596F9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1096,6 +1126,8 @@
 		CE4DEEA720C79EAA00596F9D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE47D7F820D6120E0083BABA /* XXAboutUSViewController.h */,
+				CE47D7F920D6120E0083BABA /* XXAboutUSViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1127,6 +1159,8 @@
 		CE4DEEAB20C79EAA00596F9D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE47D7FB20D615110083BABA /* XXNumberCombinationViewController.h */,
+				CE47D7FC20D615110083BABA /* XXNumberCombinationViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1158,6 +1192,8 @@
 		CE4DEEAF20C79EAA00596F9D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE47D7FE20D616020083BABA /* XXNumberCompatibilityViewController.h */,
+				CE47D7FF20D616020083BABA /* XXNumberCompatibilityViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1228,6 +1264,8 @@
 		CE4DEEB720C79EAA00596F9D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE47D80120D617670083BABA /* XXSamePeriodViewController.h */,
+				CE47D80220D617670083BABA /* XXSamePeriodViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1242,6 +1280,14 @@
 		CE4DEEB920C79EAA00596F9D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE47D80A20D640B80083BABA /* XXSamePeriodHeadView.h */,
+				CE47D80B20D640B80083BABA /* XXSamePeriodHeadView.m */,
+				CE47D81320D660360083BABA /* XXSamePeriodTableViewCell.h */,
+				CE47D81420D660360083BABA /* XXSamePeriodTableViewCell.m */,
+				CE47D80D20D64DA70083BABA /* XXSamePeriodCollectionViewCell.h */,
+				CE47D80E20D64DA70083BABA /* XXSamePeriodCollectionViewCell.m */,
+				CE47D81620D67C870083BABA /* XXSelectionPeriodView.h */,
+				CE47D81720D67C870083BABA /* XXSelectionPeriodView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1259,6 +1305,8 @@
 		CE4DEEBB20C79EAA00596F9D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE47D80420D618920083BABA /* XXSimilarViewController.h */,
+				CE47D80520D618920083BABA /* XXSimilarViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1290,6 +1338,8 @@
 		CE4DEEBF20C79EAA00596F9D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE47D80720D619360083BABA /* XXStatisticViewController.h */,
+				CE47D80820D619360083BABA /* XXStatisticViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -3112,6 +3162,7 @@
 			files = (
 				CE4DF29A20C8DE9800596F9D /* LotteryDetail11X5ViewController.m in Sources */,
 				CE4DF2B220C8DE9800596F9D /* LotteryTimeView.m in Sources */,
+				CE47D80020D616020083BABA /* XXNumberCompatibilityViewController.m in Sources */,
 				CE4DF2D520C8DE9800596F9D /* KKMineModel.m in Sources */,
 				CE4DF2A020C8DE9800596F9D /* BetModel.m in Sources */,
 				CE4DF2CE20C8DE9800596F9D /* KKBetRecordToolTipView.m in Sources */,
@@ -3128,9 +3179,11 @@
 				CE4DF2F520C8DE9800596F9D /* PayModel.m in Sources */,
 				CE4DEF3F20C8DB4400596F9D /* MCTool.m in Sources */,
 				CE4DF26E20C8DE9800596F9D /* HomeViewController.m in Sources */,
+				CE47D7FD20D615110083BABA /* XXNumberCombinationViewController.m in Sources */,
 				CE4DEFAD20C8DC1C00596F9D /* KKURLManager.m in Sources */,
 				CE4DF2E320C8DE9800596F9D /* KKRechargeRecordViewController.m in Sources */,
 				CE4DF24920C8DE9800596F9D /* KKFindDetailViewController.m in Sources */,
+				CE47D80F20D64DA70083BABA /* XXSamePeriodCollectionViewCell.m in Sources */,
 				CE4DF30020C8DE9800596F9D /* KKTrend_historyViewController.m in Sources */,
 				CE4DF2A420C8DE9800596F9D /* LHCManager.m in Sources */,
 				CE4DF25820C8DE9800596F9D /* KKGDUserModel.m in Sources */,
@@ -3140,6 +3193,7 @@
 				CE4DF28320C8DE9800596F9D /* ChaseLotteryTableViewCell.m in Sources */,
 				CE4DEF9920C8DC1C00596F9D /* KKBalanceManager.m in Sources */,
 				CE4DF2C220C8DE9800596F9D /* KKDetailTypeModel.m in Sources */,
+				CE47D7FA20D6120E0083BABA /* XXAboutUSViewController.m in Sources */,
 				CE4DF2DA20C8DE9800596F9D /* KKMessageDetailsView.m in Sources */,
 				CE4DF26720C8DE9800596F9D /* KKLotterySortHeadView.m in Sources */,
 				CE4DF26220C8DE9800596F9D /* KKFindMVPView.m in Sources */,
@@ -3151,6 +3205,7 @@
 				CE4DF28B20C8DE9800596F9D /* LockTimeModel.m in Sources */,
 				CE4DF2B120C8DE9800596F9D /* LotteryDetailTitleView.m in Sources */,
 				CE4DF29C20C8DE9800596F9D /* LotteryDetailKL10FViewController.m in Sources */,
+				CE47D81820D67C870083BABA /* XXSelectionPeriodView.m in Sources */,
 				CE4DF2E020C8DE9800596F9D /* KKNotificationSettingViewController.m in Sources */,
 				CE4DF42520C90BB500596F9D /* WeChatPayModel.m in Sources */,
 				CE4DF04C20C8DD3B00596F9D /* TCTTimerEngine.m in Sources */,
@@ -3177,6 +3232,7 @@
 				CE4DF2A920C8DE9800596F9D /* FootView.m in Sources */,
 				CE4DF2BF20C8DE9800596F9D /* ToolBarTextField.m in Sources */,
 				CE4DF29520C8DE9800596F9D /* KKSSCBaseTableViewCell.m in Sources */,
+				CE47D80320D617670083BABA /* XXSamePeriodViewController.m in Sources */,
 				CE4DF2D320C8DE9800596F9D /* KKExtractRecordViewController.m in Sources */,
 				CE4DF29120C8DE9800596F9D /* HistoryOfTheLotteryTableViewCell.m in Sources */,
 				CE4DF2AC20C8DE9800596F9D /* KeyBoardView.m in Sources */,
@@ -3185,6 +3241,7 @@
 				CE4DF24320C8DE9800596F9D /* KKActivitySortView.m in Sources */,
 				CE4DF24B20C8DE9800596F9D /* KKFindSortViewController.m in Sources */,
 				CE4DF27820C8DE9800596F9D /* CMMessageTipsView.m in Sources */,
+				CE47D80C20D640B80083BABA /* XXSamePeriodHeadView.m in Sources */,
 				CE4DF27020C8DE9800596F9D /* HomeButtonModel.m in Sources */,
 				CE4DF2DD20C8DE9800596F9D /* KKNotificationModel.m in Sources */,
 				CE4DEF9720C8DC1C00596F9D /* KKAppSettingManager.m in Sources */,
@@ -3246,6 +3303,7 @@
 				CE4DEE9020C799B200596F9D /* main.m in Sources */,
 				CE4DEED820C7BF3100596F9D /* XXLBaseNavigationController.m in Sources */,
 				CE4DF30920C8DE9800596F9D /* SlotMachineTableViewCell.m in Sources */,
+				CE47D80920D619360083BABA /* XXStatisticViewController.m in Sources */,
 				CE4DF30320C8DE9800596F9D /* KKTrendModel.m in Sources */,
 				CE4DF25C20C8DE9800596F9D /* KKFindDetailInfoView.m in Sources */,
 				CE4DEFAC20C8DC1C00596F9D /* KKShakeActionManager.m in Sources */,
@@ -3259,6 +3317,7 @@
 				CE4DF27120C8DE9800596F9D /* HomepageBannerModel.m in Sources */,
 				CE4DEFA720C8DC1C00596F9D /* KKNewMemberViewManager.m in Sources */,
 				CE4DF25D20C8DE9800596F9D /* KKFindDetailPublicView.m in Sources */,
+				CE47D81520D660360083BABA /* XXSamePeriodTableViewCell.m in Sources */,
 				CE4DF2F920C8DE9800596F9D /* KKNativeRechargeView.m in Sources */,
 				CE4DF2F620C8DE9800596F9D /* KKCenterTextField.m in Sources */,
 				CE4DF24620C8DE9800596F9D /* KKMVPPeopleTabelViewCell.m in Sources */,
@@ -3368,6 +3427,7 @@
 				CE4DF26320C8DE9800596F9D /* KKFindSortView.m in Sources */,
 				CE4DF29020C8DE9800596F9D /* DoubleChaseView.m in Sources */,
 				CE4DF2A620C8DE9800596F9D /* NextTheLotteryModel.m in Sources */,
+				CE47D80620D618920083BABA /* XXSimilarViewController.m in Sources */,
 				CE4DF27E20C8DE9800596F9D /* SignInView.m in Sources */,
 				CE4DF25A20C8DE9800596F9D /* KKMyFollowModel.m in Sources */,
 				CE4DF25620C8DE9800596F9D /* KKGDDetailModel.m in Sources */,

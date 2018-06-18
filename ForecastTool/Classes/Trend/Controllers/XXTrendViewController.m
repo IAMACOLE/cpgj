@@ -39,11 +39,14 @@
         make.edges.mas_equalTo(0);
     }];
     [self.scrollView addSubview:self.tableView];
-    self.tableView.frame = CGRectMake(0, 0, 60 * 12, 30 * 21);
+    self.tableView.frame = CGRectMake(0, 0, 60 * 13, 30 * 21);
     
 }
 
 -(void)getData{
+    if (_pageNum == 1) {
+        [MCView BSMBProgressHUD_bufferAndTextWithView:self.view andText:nil];
+    }
     NSString * urlStr = [NSString stringWithFormat:@"%@%@",MCIP,@"cp/kj-trend-history"];
     NSDictionary * parameter = @{
                                  @"lottery_id" : @"pk10",
@@ -53,7 +56,7 @@
                                  };
     [[XXNetWorkTool shareTool] postDataWithUrl:urlStr parameters:parameter success:^(id responseObject) {
         [self.tableView.mj_header endRefreshing];
-        
+        [MCView BSMBProgressHUD_hideWith:self.view];
         NSArray *dataSource =  [XXLuckyDataModel mj_objectArrayWithKeyValuesArray:responseObject];
         if(self->_pageNum == 1){
             [self.dataArr removeAllObjects];
@@ -67,14 +70,15 @@
             }
         }
         [self.tableView reloadData];
-        self.tableView.frame = CGRectMake(0, 0, 60 * 12, 30 * self.dataArr.count);
+        self.tableView.frame = CGRectMake(0, 0, 60 * 13, 30 * self.dataArr.count);
         if(self.dataArr.count){
-            self.scrollView.contentSize = CGSizeMake(60 * 12, 30 * self.dataArr.count);
+            self.scrollView.contentSize = CGSizeMake(60 * 13, 30 * self.dataArr.count);
         }else{
             self.scrollView.contentSize = CGSizeMake(0, 0);
         }
     } fail:^(NSError *error) {
         NSLog(@"%@",error.description);
+        [MCView BSMBProgressHUD_hideWith:self.view];
         [self.tableView.mj_footer endRefreshing];
         [self.tableView.mj_header endRefreshing];
     }];
